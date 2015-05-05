@@ -1,0 +1,26 @@
+{
+  "name": "pb-business-plan",
+  "version": "0.1",
+  "homepage": "https://github.com/pieroblunda/pb-business-plan",
+  "authors": [
+    "Piero Blunda <pieroblunda@gmail.com>"
+  ],
+  "description": "Template to create a new business plan",
+  "main": "index.html",
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "animate.css": "~3.2.6",
+    "fullpage.js": "~2.6.5",
+    "bootstrap": "~3.3.4"
+  }
+}
