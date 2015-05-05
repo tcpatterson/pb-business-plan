@@ -1,0 +1,16 @@
+h1 small.slogan{
+  display: block;
+  color: #FFF;
+  font-style: italic;
+  text-transform: lowercase;
+}
+
+#section0 h1{
+  margin-bottom: 80px;
+}
+
+#section0 .intro{
+  background-image: url('../images/logo.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+}
