@@ -32,6 +32,9 @@ h1 small.slogan{
   margin-left: auto;
   margin-right: auto;
 }
+.section header h1.lg{
+  width: 30%;
+}
 
 #section0 h1{
   margin-bottom: 80px;

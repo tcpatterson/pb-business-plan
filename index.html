@@ -64,13 +64,19 @@
 
 	<script type="text/javascript">
 		$(document).ready(function() {
-			$('#fullpage').fullpage({
-				anchors: ['a-page', 'b-page', 'c-page','d-page', 'e-page', 'f-page','g-page', 'h-page', 'i-page'],
-				sectionsColor: ['#C63D0F', '#1BBC9B', '#7E8F7C','#C63D0F', '#1BBC9B', '#7E8F7C','#C63D0F', '#1BBC9B', '#7E8F7C'],
-				navigation: true,
-				navigationPosition: 'right',
-				navigationTooltips: ['Presentation', 'Opportunity', 'Rivals', 'Statics', 'Sales & Marketing', 'Prediction', 'Milestones', 'Team', 'Ending notes']
-			});
+          var backgroundColors = ['#C63D0F', '#1BBC9B', '#7E8F7C','#C63D0F', '#1BBC9B', '#7E8F7C','#C63D0F', '#1BBC9B', '#7E8F7C'];
+          $('#fullpage').fullpage({
+            anchors: ['a-page', 'b-page', 'c-page','d-page', 'e-page', 'f-page','g-page', 'h-page', 'i-page'],
+            sectionsColor: backgroundColors,
+            navigation: true,
+            navigationPosition: 'right',
+            navigationTooltips: ['Presentation', 'Opportunity', 'Rivals', 'Statics', 'Sales & Marketing', 'Prediction', 'Milestones', 'Team', 'Ending notes']
+          });
+          
+          $('header h1').each(function(i, v){
+            console.log(i,v);
+            $(this).css('background-color', backgroundColors[i+1]);
+          });
 		});
 	</script>
 
@@ -270,7 +276,7 @@
   
     <!-- Slide 5: Sales & Marketing -->
     <div class="section" id="section5">
-      <header><h1>Sales & Marketing</h1></header>
+      <header><h1 class="lg">Sales & Marketing</h1></header>
       <div class="intro">
         <div class="row text-left">
           <div class="col-md-8 col-md-offset-2">
