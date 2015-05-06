@@ -1,16 +1,17 @@
-h2, h2,h3, h4, h5, h6{
+h2, h2,h3, h4, h5, h6, ul, li, p, div, span, i{
   color: #FFF;
+}
+
+.font-xl{
+  font-size: x-large;
 }
 
 ul{
   padding-left: 15px;
 }
 
-.fa{color:#FFF;}
-
 h1 small.slogan{
   display: block;
-  color: #FFF;
   font-style: italic;
   text-transform: lowercase;
 }
@@ -54,9 +55,6 @@ h1 small.slogan{
   background-repeat: no-repeat;
   background-size: contain;
 }
-#section0 .intro p{
-  font-size: x-large;
-}
 
 .card{
   border-radius:5px;
@@ -64,7 +62,6 @@ h1 small.slogan{
   padding: 40px;
   margin:20px;
 }
-.card h4{color:#FFF;}
 
 .card.bg-success{background-color: #5cb85c;}
 .card.bg-info{background-color: #5bc0de;}
@@ -102,7 +99,7 @@ h1 small.slogan{
 ol.timeline {
   position: relative;
   display: block;
-  margin: 5% auto;
+  margin: 10% auto;
   padding-left: 4px;
   padding-top: 2px;
   padding-bottom: 2px;
@@ -133,17 +130,22 @@ ol.timeline li::before {
   border-radius: 16px;
   background-color:#9b2;
 }
+ol.timeline li h4{
+  top: -50px;
+  position: absolute;
+  left: 34%;
+}
 ol.timeline li aside {
   position: absolute;
   width: 95%;
   left: 0;
   top: 40px;
-  padding: 10px 15px;
+  padding: 15px 15px;
   border-radius: 5px;
   background: #FFF;
   color:#000;
 }
-ol.timeline li aside p{color:#000;}
+ol.timeline li aside p{color:#000;margin: 0}
 ol.timeline li aside::before {
   content: "";
   position: absolute;
@@ -160,9 +162,8 @@ ol.timeline li aside::before {
 /* LINE HISTORY END */
 
 .team-member h2,
-.team-member h3{color:#FFF;}
 .team-member h2 small,
-.team-member h3 small{display: block;color:#FFF;}
+.team-member h3 small{display: block;}
 img.avatar{
   border: 4px solid #FFF;
   border-radius:50%;
