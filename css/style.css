@@ -1,4 +1,4 @@
-h2, h2,h3, h4, h5, h6, ul, li, p, div, span, i{
+h2, h2,h3, h4, h5, h6, ul, li, p, div, span, i, small, h1 small, h2 .small, h2 small, h3 .small, h3 small{
   color: #FFF;
 }
 
