@@ -41,6 +41,10 @@ h1 small.slogan{
   background-image: url('../images/logo.png');
   background-position: center center;
   background-repeat: no-repeat;
+  background-size: contain;
+}
+#section0 .intro p{
+  font-size: x-large;
 }
 
 .card{
