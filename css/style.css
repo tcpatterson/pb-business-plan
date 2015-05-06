@@ -162,3 +162,13 @@ img.avatar.principal{
 .satellite.clock2 h3{text-align: right;float: 45px;position: absolute;}
 .satellite.clock4{right:-60px;bottom: 0;}
 .satellite.clock8{left:-60px;bottom:0;}
+
+#section8 .intro{
+  background-image: url('../images/e-la-logo.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 75%;
+}
+#section8 .intro h1{
+  margin-top: 80px;
+}
