@@ -64,13 +64,19 @@
 
 	<script type="text/javascript">
 		$(document).ready(function() {
-			$('#fullpage').fullpage({
-				anchors: ['a-page', 'b-page', 'c-page','d-page', 'e-page', 'f-page','g-page', 'h-page', 'i-page'],
-				sectionsColor: ['#C63D0F', '#1BBC9B', '#7E8F7C','#C63D0F', '#1BBC9B', '#7E8F7C','#C63D0F', '#1BBC9B', '#7E8F7C'],
-				navigation: true,
-				navigationPosition: 'right',
-				navigationTooltips: ['First page', 'Second page', 'Third and last page']
-			});
+          var backgroundColors = ['#C63D0F', '#1BBC9B', '#7E8F7C','#C63D0F', '#1BBC9B', '#7E8F7C','#C63D0F', '#1BBC9B', '#7E8F7C'];
+          $('#fullpage').fullpage({
+            anchors: ['a-page', 'b-page', 'c-page','d-page', 'e-page', 'f-page','g-page', 'h-page', 'i-page'],
+            sectionsColor: backgroundColors,
+            navigation: true,
+            navigationPosition: 'right',
+            navigationTooltips: ['Presentation', 'Opportunity', 'Rivals', 'Statics', 'Sales & Marketing', 'Prediction', 'Milestones', 'Team', 'Ending notes']
+          });
+          
+          $('header h1').each(function(i, v){
+            console.log(i,v);
+            $(this).css('background-color', backgroundColors[i+1]);
+          });
 		});
 	</script>
 
@@ -86,7 +92,7 @@
           <h1>My Title Here <small class="slogan">My slogan here</small></h1>
           <div class="row">
             <div class="col-md-6 col-md-offset-3">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas varius tempor arcu, quis hendrerit nunc accumsan quis. In ut dolor metus, eget viverra odio. Quisque sed suscipit leo. Curabitur dictum magna ut turpis interdum a mollis nunc condimentum.</p>
+              <p class="font-xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas varius tempor arcu, quis hendrerit nunc accumsan quis. In ut dolor metus, eget viverra odio. Quisque sed suscipit leo. Curabitur dictum magna ut turpis interdum a mollis nunc condimentum.</p>
             </div>
           </div>
 		</div>
@@ -148,30 +154,23 @@
 	<div class="section" id="section3">
       <header><h1>Rivals</h1></header>
       <div class="intro">
+        <h3>¿Cómo nuestra solución es mejor frente a los copetidores?</h3>
         <div class="row text-left">
           <div class="col-md-8 col-md-offset-2">
             
-            <div class="row">
-              <div class="col-md-5 card bg-primary">
-                <h4>Competidor1</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              </div>
-              
-              <div class="col-md-5 col-md-offset-2 card bg-success">
-                <h4>Competidor1</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              </div>
-              
-              <div class="col-md-5 card bg-info">
-                <h4>Competidor1</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              </div>
-              
-              <div class="col-md-5 col-md-offset-2 card bg-danger">
-                <h4>Competidor1</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              </div>
-              
+            <div class="card bg-primary">
+              <h4>Competidor1</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+
+            <div class="card bg-success">
+              <h4>Competidor1</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+
+            <div class="card bg-info">
+              <h4>Competidor1</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
             
           </div>
@@ -270,16 +269,16 @@
   
     <!-- Slide 5: Sales & Marketing -->
     <div class="section" id="section5">
-      <header><h1>Sales & Marketing</h1></header>
+      <header><h1 class="lg">Sales & Marketing</h1></header>
       <div class="intro">
         <div class="row text-left">
           <div class="col-md-8 col-md-offset-2">
             
             <div class="row">
               
-              <div class="col-md-5 col-md-offset-1">
+              <div class="col-md-6">
                 <h3>asdasd</h3>
-                <ul>
+                <ul class="font-xl">
                   <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
                   <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
                   <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
@@ -289,9 +288,9 @@
                 </ul>
               </div>
 
-              <div class="col-md-5">
+              <div class="col-md-6">
                 <h3>asdasd</h3>
-                <ul>
+                <ul class="font-xl">
                   <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
                   <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
                   <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
@@ -317,9 +316,9 @@
             
             <div class="row">
               
-              <div class="col-md-5 col-md-offset-1">
+              <div class="col-md-6">
                 <h3>asdasd</h3>
-                <ul>
+                <ul class="font-xl">
                   <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
                   <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
                   <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
@@ -329,9 +328,9 @@
                 </ul>
               </div>
 
-              <div class="col-md-5">
+              <div class="col-md-6">
                 <h3>asdasd</h3>
-                <ul>
+                <ul class="font-xl">
                   <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
                   <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
                   <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
@@ -357,32 +356,32 @@
             <i class="fa fa-calendar fa-5x"></i>
             <ol class="timeline">
               <li>
+                <h4>16 Abr</h4>
                 <aside>
-                  <h4>16 Abr</h4>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </aside>
               </li>
               <li>
+                <h4>16 Abr</h4>
                 <aside>
-                  <h4>16 Abr</h4>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </aside>
               </li>
               <li>
+                <h4>16 Abr</h4>
                 <aside>
-                  <h4>16 Abr</h4>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </aside>
               </li>
               <li>
+                <h4>16 Abr</h4>
                 <aside>
-                  <h4>16 Abr</h4>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </aside>
               </li>
               <li>
+                <h4>16 Abr</h4>
                 <aside>
-                  <h4>16 Abr</h4>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </aside>
               </li>
