@@ -40,3 +40,13 @@ h1 small.slogan{
   background-position: center center;
   background-repeat: no-repeat;
 }
+
+.card{
+  border-radius:5px;
+  text-align: left;
+  margin-bottom: 15%;
+}
+.card.bg-success{background-color: #5cb85c;}
+.card.bg-info{background-color: #5bc0de;}
+.card.bg-warning{background-color: #f0ad4e;}
+.card.bg-danger{background-color: #d9534f;}
