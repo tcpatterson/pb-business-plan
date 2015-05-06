@@ -2,6 +2,8 @@ ul{
   padding-left: 15px;
 }
 
+.fa{color:#FFF;}
+
 h1 small.slogan{
   display: block;
   color: #FFF;
@@ -76,3 +78,65 @@ h1 small.slogan{
   text-align: center;
   padding:25px;
 }
+
+/* LINE HISTORY START */
+/* ---- Timeline ---- */
+ol.timeline {
+  position: relative;
+  display: block;
+  margin: 5% auto;
+  padding-left: 4px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  background: #9b2;
+  width:100%;
+}
+/* ---- Timeline elements ---- */
+ol.timeline li {
+  position: relative;
+  top: 0;
+  display: inline-block;
+  height: 5px;
+  width: 20px;
+  font: bold 14px arial;
+  float:left;
+  width:20%;
+  /* ---- Details ---- */
+}
+ol.timeline li::before {
+  content: "";
+  position: relative;
+  top: -8px;
+  left: 43%;
+  display: block;
+  width: 16px;
+  height: 16px;
+  border: 4px solid #9b2;
+  border-radius: 16px;
+  background-color:#9b2;
+}
+ol.timeline li aside {
+  position: absolute;
+  width: 95%;
+  left: 0;
+  top: 40px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  background: #FFF;
+  color:#000;
+}
+ol.timeline li aside p{color:#000;}
+ol.timeline li aside::before {
+  content: "";
+  position: absolute;
+  left: 44%;
+  top: -10px;
+  display: block;
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-left-color: #FFF;
+  margin-top: -10px;
+  -webkit-transform: rotate(-90deg);
+}
+/* LINE HISTORY END */
