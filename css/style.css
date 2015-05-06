@@ -1,0 +1,174 @@
+ul{
+  padding-left: 15px;
+}
+
+.fa{color:#FFF;}
+
+h1 small.slogan{
+  display: block;
+  color: #FFF;
+  font-style: italic;
+  text-transform: lowercase;
+}
+
+.section header{
+  height: 20px;
+  border-top-style: dotted;
+  text-align: center;
+  top: 0;
+  position: absolute;
+  width: 95%;
+  margin-top: 30px;
+  border-color: #FFF;
+  margin-left: 36px;
+  margin-right: 36px;
+}
+
+.section header h1{
+  margin-top: -25px;
+  background-color: #1BBC9B;
+  width: 20%;
+  font-size: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#section0 h1{
+  margin-bottom: 80px;
+}
+
+#section0 .intro{
+  background-image: url('../images/logo.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.card{
+  border-radius:5px;
+  text-align: left;
+  margin-bottom: 15%;
+}
+.card.bg-success{background-color: #5cb85c;}
+.card.bg-info{background-color: #5bc0de;}
+.card.bg-warning{background-color: #f0ad4e;}
+.card.bg-danger{background-color: #d9534f;}
+
+.circle-stats{
+  border-radius: 50%;
+  border: 20px solid #337ab7;
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  display: table;
+}
+.circle-stats.success{border-color:#5cb85c;}
+.circle-stats.info{border-color:#5bc0de;}
+.circle-stats.warning{border-color:#f0ad4e;}
+.circle-stats.danger{border-color:#d9534f;}
+
+.circle-stats p{
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 3.5em;
+}
+
+.founding{
+  background-color:#5bc0de;
+  font-size:5em;
+  text-align: center;
+  padding:25px;
+}
+
+/* LINE HISTORY START */
+/* ---- Timeline ---- */
+ol.timeline {
+  position: relative;
+  display: block;
+  margin: 5% auto;
+  padding-left: 4px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  background: #9b2;
+  width:100%;
+}
+/* ---- Timeline elements ---- */
+ol.timeline li {
+  position: relative;
+  top: 0;
+  display: inline-block;
+  height: 5px;
+  width: 20px;
+  font: bold 14px arial;
+  float:left;
+  width:20%;
+  /* ---- Details ---- */
+}
+ol.timeline li::before {
+  content: "";
+  position: relative;
+  top: -8px;
+  left: 43%;
+  display: block;
+  width: 16px;
+  height: 16px;
+  border: 4px solid #9b2;
+  border-radius: 16px;
+  background-color:#9b2;
+}
+ol.timeline li aside {
+  position: absolute;
+  width: 95%;
+  left: 0;
+  top: 40px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  background: #FFF;
+  color:#000;
+}
+ol.timeline li aside p{color:#000;}
+ol.timeline li aside::before {
+  content: "";
+  position: absolute;
+  left: 44%;
+  top: -10px;
+  display: block;
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-left-color: #FFF;
+  margin-top: -10px;
+  -webkit-transform: rotate(-90deg);
+}
+/* LINE HISTORY END */
+
+.team-member h2,
+.team-member h3{color:#FFF;}
+.team-member h2 small,
+.team-member h3 small{display: block;color:#FFF;}
+img.avatar{
+  border: 4px solid #FFF;
+  border-radius:50%;
+  width:100px;
+  height: 100px;
+}
+img.avatar.principal{
+  width: 250px;
+  height: 250px;
+}
+.satellite{position:absolute;}
+.satellite.clock10{left:0;top:0;}
+.satellite.clock10 h3{text-align: left;left: -55px;position: absolute;}
+.satellite.clock2{right:0;top:0;}
+.satellite.clock2 h3{text-align: right;float: 45px;position: absolute;}
+.satellite.clock4{right:-60px;bottom: 0;}
+.satellite.clock8{left:-60px;bottom:0;}
+
+#section8 .intro{
+  background-image: url('../images/e-la-logo.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 75%;
+}
+#section8 .intro h1{
+  margin-top: 80px;
+}
