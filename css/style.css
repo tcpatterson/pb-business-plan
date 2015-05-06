@@ -50,3 +50,29 @@ h1 small.slogan{
 .card.bg-info{background-color: #5bc0de;}
 .card.bg-warning{background-color: #f0ad4e;}
 .card.bg-danger{background-color: #d9534f;}
+
+.circle-stats{
+  border-radius: 50%;
+  border: 20px solid #337ab7;
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  display: table;
+}
+.circle-stats.success{border-color:#5cb85c;}
+.circle-stats.info{border-color:#5bc0de;}
+.circle-stats.warning{border-color:#f0ad4e;}
+.circle-stats.danger{border-color:#d9534f;}
+
+.circle-stats p{
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 3.5em;
+}
+
+.founding{
+  background-color:#5bc0de;
+  font-size:5em;
+  text-align: center;
+  padding:25px;
+}
