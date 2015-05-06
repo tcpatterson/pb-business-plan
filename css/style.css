@@ -140,3 +140,25 @@ ol.timeline li aside::before {
   -webkit-transform: rotate(-90deg);
 }
 /* LINE HISTORY END */
+
+.team-member h2,
+.team-member h3{color:#FFF;}
+.team-member h2 small,
+.team-member h3 small{display: block;color:#FFF;}
+img.avatar{
+  border: 4px solid #FFF;
+  border-radius:50%;
+  width:100px;
+  height: 100px;
+}
+img.avatar.principal{
+  width: 250px;
+  height: 250px;
+}
+.satellite{position:absolute;}
+.satellite.clock10{left:0;top:0;}
+.satellite.clock10 h3{text-align: left;left: -55px;position: absolute;}
+.satellite.clock2{right:0;top:0;}
+.satellite.clock2 h3{text-align: right;float: 45px;position: absolute;}
+.satellite.clock4{right:-60px;bottom: 0;}
+.satellite.clock8{left:-60px;bottom:0;}
